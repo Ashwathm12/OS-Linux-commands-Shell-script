@@ -345,7 +345,7 @@ uniq file22
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/low.png)
+
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -361,18 +361,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/cat1.png)
+
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/cat2.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/tar1.png)
+
 
 mkdir backupdir
  
@@ -380,20 +380,19 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/tar2.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/tar1.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/ls.png) 
+ 
 gunzip backup.tar.gz
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/gun.png)
+
  
 # Shell Script
 ```
@@ -415,7 +414,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/here.png)
+
 
 cat < scriptest.sh 
 ```bash
@@ -453,28 +452,24 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test1.png)
+
  
 ls file1
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test2.png)
 
 echo $?
-## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test3.png)
-
+## OUTPUT 
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-![file](/ex01/OS-Linux-commands-Shell-script/images/test4.png)
-
+ 
 abcd
  
 echo $?
  ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test5.png)
+
 
  
 # mis-using string comparisons
@@ -505,6 +500,7 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
+##OUTPUT
 
 
 
@@ -512,7 +508,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/str.png)
+
 
 # check file ownership
 cat < psswdperm.sh 
@@ -539,7 +535,6 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/pass.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -586,7 +581,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/nested.png)
+
 
 
 # using numeric test comparisons
@@ -628,10 +623,9 @@ fi
 
 $ chmod 755 iftest.sh
  
-$ ./iftest.sh
+$ ./iftest.sh 
+##OUTPUT
 
-## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/iftest.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -679,9 +673,7 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-
-## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/ifnested.png)
+##OUTPUT
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -710,7 +702,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/check.png)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -726,7 +718,6 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/compound.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -746,9 +737,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
-## outut
- ![file](/ex01/OS-Linux-commands-Shell-script/images/casecheck.png)
-
+ 
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -875,7 +864,6 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/fortype.png)
 
 cat forctype1.sh 
 ```bash
@@ -1074,6 +1062,7 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
+## OUTPUT 
  
 cat > palindrome.sh
 ```bash
@@ -1101,7 +1090,7 @@ else
 fi
 ```
 ## OUTPUT 
-![file](/ex01/OS-Linux-commands-Shell-script/images/palindrome.png)
+
 
 # RESULT:
 The Commands are executed successfully.
