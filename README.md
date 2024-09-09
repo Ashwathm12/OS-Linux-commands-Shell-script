@@ -42,28 +42,28 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![file1](/ex01/OS-Linux-commands-Shell-script/images/file1.png)
+![file1](images/file1.png)
 
 
 cat < file2
 ## OUTPUT
-![file2](/ex01/OS-Linux-commands-Shell-script/images/file2.png)
+![file2](images/file2.png)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-![cmp](/ex01/OS-Linux-commands-Shell-script/images/cmp.png)
+![cmp](images/cmp.png)
 
  
 comm file1 file2
  ## OUTPUT
-![comm](/ex01/OS-Linux-commands-Shell-script/images/comm.png)
+![comm](images/comm.png)
 
  
 diff file1 file2
 ## OUTPUT
-![diff](/ex01/OS-Linux-commands-Shell-script/images/diff.png)
+![diff](images/diff.png)
 
 
 #Filters
@@ -87,18 +87,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-![file11](/ex01/OS-Linux-commands-Shell-script/images/file11.png)
+![file11](images/file11.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-![file22](/ex01/OS-Linux-commands-Shell-script/images/1file22.png)
+![file22](images/1file22.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![file22](/ex01/OS-Linux-commands-Shell-script/images/2file22.png)
+![file22](images/2file22.png)
 
 cat < newfile 
 ```
@@ -112,35 +112,35 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/newfile1.png)
+![file](images/newfile1.png)
 
 
 grep hello newfile 
 ## OUTPUT
-![new](/ex01/OS-Linux-commands-Shell-script/images/newfile2.png)
+![new](images/newfile2.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-![new](/ex01/OS-Linux-commands-Shell-script/images/newfile3.png)
+![new](images/newfile3.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/grep1.png)
+![file](images/grep1.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/grep2.png)
+![file](images/grep2.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/gregworld.png)
+![file](images/gregworld.png)
 
 
 grep -w -n world newfile   
@@ -168,60 +168,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg1.png)
+![file](images/eg1.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg2.png)
+![file](images/eg2.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg3.png)
+![file](images/eg3.png)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg4.png)
+![file](images/eg4.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg5.png)
+![file](images/eg5.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg6.png)
+![file](images/eg6.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg7.png)
+![file](images/eg7.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg8.png)
+![file](images/eg8.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg9.png)
+![file](images/eg9.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg10.png)
+![file](images/eg10.png)
 
 egrep l{2} newfile
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg11.png)
+![file](images/eg11.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-![file](/ex01/OS-Linux-commands-Shell-script/images/eg12.png)
+![file](images/eg12.png)
 
 cat > file23
 ```
@@ -239,76 +239,76 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed1.png)
+![file](images/sed1.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed2.png)
+![file](images/sed2.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed3.png)
+![file](images/sed3.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed4.png)
+![file](images/sed4.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed5.png)
+![file](images/sed5.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed6.png)
+![file](images/sed6.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed7.png)
+![file](images/sed7.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed8.png)
+![file](images/sed8.png)
 
 
 seq 10 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed9.png)
+![file](images/sed9.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed10.png)
+![file](images/sed10.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed11.png)
+![file](images/sed11.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed13.png)
+![file](images/sed13.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed14.png)
+![file](images/sed14.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed15.png)
+![file](images/sed15.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sed16.png)
+![file](images/sed16.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -325,7 +325,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sort1.png)
+![file](images/sort1.png)
 
 cat > file22
 ```
@@ -338,14 +338,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/sort2.png)
+![file](images/sort2.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/low.png)
+![file](images/low.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -361,18 +361,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/cat1.png)
+![file](images/cat1.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/cat2.png)
+![file](images/cat2.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/tar1.png)
+![file](images/tar1.png)
 
 mkdir backupdir
  
@@ -380,20 +380,20 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/tar2.png)
+![file](images/tar2.png)
 
 tar -xvf backup.tar
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/tar1.png)
+![file](images/tar1.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/ls.png) 
+![file](images/ls.png) 
 gunzip backup.tar.gz
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/gun.png)
+![file](images/gun.png)
  
 # Shell Script
 ```
@@ -415,7 +415,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/here.png)
+![file](images/here.png)
 
 cat < scriptest.sh 
 ```bash
@@ -453,28 +453,28 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test1.png)
+![file](images/test1.png)
  
 ls file1
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test2.png)
+![file](images/test2.png)
 
 echo $?
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test3.png)
+![file](images/test3.png)
 
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-![file](/ex01/OS-Linux-commands-Shell-script/images/test4.png)
+![file](images/test4.png)
 
 abcd
  
 echo $?
  ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/test5.png)
+![file](images/test5.png)
 
  
 # mis-using string comparisons
@@ -512,7 +512,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/str.png)
+![file](images/str.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -539,7 +539,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/pass.png)
+![file](images/pass.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -586,7 +586,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/nested.png)
+![file](images/nested.png)
 
 
 # using numeric test comparisons
@@ -631,7 +631,7 @@ $ chmod 755 iftest.sh
 $ ./iftest.sh
 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/iftest.png)
+![file](images/iftest.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -681,7 +681,7 @@ $ chmod 755 ifnested.sh
 $ ./ifnested.sh 
 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/ifnested.png)
+![file](images/ifnested.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -710,7 +710,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/check.png)
+![file](images/check.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -726,7 +726,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/compound.png)
+![file](images/compound.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -747,7 +747,7 @@ $ chmod 755 casecheck.sh
  
 $ ./casecheck.sh 
 ## outut
- ![file](/ex01/OS-Linux-commands-Shell-script/images/casecheck.png)
+ ![file](images/casecheck.png)
 
 cat > whiletest
 ```bash
@@ -875,7 +875,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-![file](/ex01/OS-Linux-commands-Shell-script/images/fortype.png)
+![file](images/fortype.png)
 
 cat forctype1.sh 
 ```bash
@@ -1101,7 +1101,7 @@ else
 fi
 ```
 ## OUTPUT 
-![file](/ex01/OS-Linux-commands-Shell-script/images/palindrome.png)
+![file](images/palindrome.png)
 
 # RESULT:
 The Commands are executed successfully.
